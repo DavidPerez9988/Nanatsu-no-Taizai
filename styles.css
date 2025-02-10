@@ -1,35 +1,16 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
 }
 
 main {
@@ -40,39 +21,19 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.contenido-adicional {
+    display: none;
 }
 
-form label {
-    margin-bottom: 5px;
-}
-
-form input, form textarea, form button {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
+.leer-mas-btn {
+    margin-top: 10px;
     cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
 }
