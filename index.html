@@ -5,130 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog dedicado a Nanatsu no Taizai y Mokushiroku no Yonkishi">
     <title>Blog de Nanatsu no Taizai</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-4">
         <h1>Blog de Nanatsu no Taizai</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#episodios">Episodios</a></li>
-                <li><a href="#personajes">Personajes</a></li>
-                <li><a href="#articulos">Artículos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#comentarios">Comentarios</a></li> 
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#episodios" class="nav-link">Episodios</a></li>
+                <li class="nav-item"><a href="#personajes" class="nav-link">Personajes</a></li>
+                <li class="nav-item"><a href="#articulos" class="nav-link">Artículos</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="#comentarios" class="nav-link">Comentarios</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="container mt-4">
+        <section class="text-center">
             <h2>Bienvenidos</h2>
             <p>Bienvenidos a nuestro blog dedicado a "Nanatsu no Taizai" y su sucesor "Mokushiroku no Yonkishi". Aquí encontrarás información sobre episodios, personajes y mucho más.</p>
         </section>
 
-        <section id="episodios">
-            <h2>Episodios</h2>
-            <ul>
-                <li><a href="#">Episodio 1: El comienzo de la aventura</a></li>
-                <li><a href="#">Episodio 2: Enfrentando al enemigo</a></li>
-                <li><a href="#">Episodio 3: El poder de la amistad</a></li>
-                <!-- Añadir más episodios aquí -->
-            </ul>
-            <h2>Episodios de Mokushiroku no Yonkishi</h2>
-            <ul>
-                <li><a href="#">Episodio 1: El nacimiento de los cuatro caballeros</a></li>
-                <li><a href="#">Episodio 2: El primer combate</a></li>
-                <li><a href="#">Episodio 3: La llegada de un nuevo enemigo</a></li>
-                <!-- Añadir más episodios aquí -->
-            </ul>
+        <section id="episodios" class="mt-5">
+            <h2 class="text-center">Episodios</h2>
+            <div id="episodiosCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="btn btn-outline-dark">Episodio 1: El comienzo de la aventura</a>
+                        </div>
+                    </div>
+                    <!-- Añadir más episodios aquí -->
+                </div>
+                <a class="carousel-control-prev" href="#episodiosCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#episodiosCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </section>
 
-        <section id="personajes">
-            <h2>Personajes</h2>
-            <ul>
-                <li><a href="#">Meliodas: El líder de los Siete Pecados</a></li>
-                <li><a href="#">Elizabeth: La princesa valiente</a></li>
-                <li><a href="#">Ban: El inmortal</a></li>
+        <section id="personajes" class="mt-5">
+            <h2 class="text-center">Personajes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="btn btn-outline-dark btn-block">Meliodas: El líder de los Siete Pecados</a>
+                </div>
                 <!-- Añadir más personajes aquí -->
-            </ul>
-            <h2>Personajes de Mokushiroku no Yonkishi</h2>
-            <ul>
-                <li><a href="#">Percival: El caballero de la Muerte</a></li>
-                <li><a href="#">Lancelot: El caballero de la Guerra</a></li>
-                <li><a href="#">Gawain: El caballero de la Hambruna</a></li>
-                <!-- Añadir más personajes aquí -->
-            </ul>
+            </div>
         </section>
 
-        <section id="articulos">
-            <h2>Artículos</h2>
-            <article>
+        <section id="articulos" class="mt-5">
+            <h2 class="text-center">Artículos</h2>
+            <article class="mb-4">
                 <h3>Reseña del primer episodio de Nanatsu no Taizai</h3>
                 <p>El primer episodio de "Nanatsu no Taizai" nos introduce a un mundo lleno de magia y aventuras. La historia comienza con la princesa Elizabeth, quien huye del reino de Liones en busca de ayuda.</p>
                 <div class="contenido-adicional" style="display: none;">
                     <p>Elizabeth se encuentra con Meliodas, el líder de los Siete Pecados y propietario del bar Boar Hat. Juntos, emprenden un viaje para reunir a los demás Pecados y enfrentarse a los enemigos que amenazan el reino.</p>
                 </div>
-                <button class="leer-mas-btn">Leer más</button>
+                <button class="btn btn-outline-primary leer-mas-btn">Leer más</button>
             </article>
-            <article>
-                <h3>Reseña del primer episodio de Mokushiroku no Yonkishi</h3>
-                <p>El primer episodio de "Mokushiroku no Yonkishi" nos presenta a los nuevos héroes de la saga. La historia sigue a Percival, un joven caballero destinado a convertirse en uno de los Cuatro Caballeros del Apocalipsis.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Percival vive en una pequeña isla junto a su abuelo, pero su vida cambia drásticamente cuando un misterioso caballero llega a la isla con noticias de un destino profetizado.</p>
-                </div>
-                <button class="leer-mas-btn">Leer más</button>
-            </article>
-            <article>
-                <h3>Teorías sobre el próximo arco de Nanatsu no Taizai</h3>
-                <p>Con la llegada del nuevo arco, los fans especulan sobre los próximos acontecimientos en "Nanatsu no Taizai". Una de las teorías más populares es que veremos más sobre la historia de los Siete Pecados.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Otra teoría sugiere que veremos el regreso de antiguos enemigos que se unirán a las fuerzas oscuras para luchar contra los Siete Pecados. Los fans también esperan ver desarrollos importantes en los personajes principales.</p>
-                </div>
-                <button class="leer-mas-btn">Leer más</button>
-            </article>
-            <article>
-                <h3>Teorías sobre el próximo arco de Mokushiroku no Yonkishi</h3>
-                <p>Los fans de "Mokushiroku no Yonkishi" esperan con ansias el próximo arco, donde se revelarán más secretos de los Cuatro Caballeros del Apocalipsis. Una teoría popular es que se enfrentarán a nuevos desafíos.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Se especula que los nuevos caballeros se enfrentarán a pruebas que desafiarán sus creencias y habilidades, forjando alianzas inesperadas y revelando traiciones ocultas.</p>
-                </div>
-                <button class="leer-mas-btn">Leer más</button>
-            </article>
+            <!-- Añadir más artículos aquí -->
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <button type="submit">Enviar</button>
+        <section id="contacto" class="mt-5">
+            <h2 class="text-center">Contacto</h2>
+            <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
             </form>
         </section>
 
-        <section id="comentarios">
-            <h2>Comentarios</h2>
-            <form action="#" method="post">
-                <label for="nombre-comentario">Nombre:</label>
-                <input type="text" id="nombre-comentario" name="nombre-comentario" required>
-                
-                <label for="comentario">Comentario:</label>
-                <textarea id="comentario" name="comentario" required></textarea>
-                
-                <button type="submit">Enviar Comentario</button>
+        <section id="comentarios" class="mt-5">
+            <h2 class="text-center">Comentarios</h2>
+            <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
+                <div class="form-group">
+                    <label for="nombre-comentario">Nombre:</label>
+                    <input type="text" id="nombre-comentario" name="nombre-comentario" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar Comentario</button>
             </form>
-            <div id="lista-comentarios">
+            <div id="lista-comentarios" class="mt-4">
                 <!-- Aquí se mostrarán los comentarios -->
             </div>
         </section>
     </main>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Blog de Nanatsu no Taizai</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="Script.js" async></script>
 </body>
 </html>
