@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     leerMasBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const contenidoAdicional = this.closest('article').querySelector('.contenido-adicional');
+            console.log('Contenido adicional:', contenidoAdicional);
             if (contenidoAdicional.style.display === 'none') {
                 contenidoAdicional.style.display = 'block';
                 this.textContent = 'Leer menos';
@@ -14,4 +15,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});
+});;
