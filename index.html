@@ -3,185 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog dedicado a Nanatsu no Taizai y Mokushiroku no Yonkishi">
     <title>Blog de Nanatsu no Taizai</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-4">
-        <h1>Blog de Nanatsu no Taizai</h1>
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#episodios" class="nav-link">Episodios</a></li>
-                <li class="nav-item"><a href="#personajes" class="nav-link">Personajes</a></li>
-                <li class="nav-item"><a href="#articulos" class="nav-link">Artículos</a></li>
-                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
-                <li class="nav-item"><a href="#comentarios" class="nav-link">Comentarios</a></li>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#episodios">Episodios</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#encuestas">Encuestas</a></li>
+                <li><a href="#teorias">Teorías de los Fans</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container mt-4">
-        <section class="text-center">
-            <h2>Bienvenidos</h2>
+    <main>
+        <section id="inicio">
+            <h1>Bienvenidos</h1>
             <p>Bienvenidos a nuestro blog dedicado a "Nanatsu no Taizai" y su sucesor "Mokushiroku no Yonkishi". Aquí encontrarás información sobre episodios, personajes y mucho más.</p>
         </section>
 
-        <section id="episodios" class="mt-5">
-            <h2 class="text-center">Episodios</h2>
-            <div id="episodiosCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center">
-                            <a href="#" class="btn btn-outline-dark">Episodio 1: El comienzo de la aventura</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center">
-                            <a href="#" class="btn btn-outline-dark">Episodio 2: Enfrentando al enemigo</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center">
-                            <a href="#" class="btn btn-outline-dark">Episodio 3: El poder de la amistad</a>
-                        </div>
-                    </div>
-                    <!-- Añadir más episodios aquí -->
-                </div>
-                <a class="carousel-control-prev" href="#episodiosCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#episodiosCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
-
-        <section id="personajes" class="mt-5">
-            <h2 class="text-center">Personajes</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Nanatsu no Taizai</h3>
-                    <a href="#" class="btn btn-outline-dark btn-block">Meliodas: El líder de los Siete Pecados</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">Elizabeth: La princesa valiente</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">Ban: El inmortal</a>
-                </div>
-                <div class="col-md-6">
-                    <h3>Mokushiroku no Yonkishi</h3>
-                    <a href="#" class="btn btn-outline-dark btn-block">Percival: El caballero de la Muerte</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">Lancelot: El caballero de la Guerra</a>
-                    <a href="#" class="btn btn-outline-dark btn-block">Gawain: El caballero de la Hambruna</a>
-                </div>
-            </div>
-        </section>
-        
-        <section id="comparacion" class="mt-5">
-            <h2 class="text-center">Comparación de Personajes</h2>
-            <p>Comparación de los personajes principales de "Nanatsu no Taizai" y "Mokushiroku no Yonkishi":</p>
+        <section id="episodios">
+            <h2>Episodios</h2>
+            <h3>Nanatsu no Taizai</h3>
             <ul>
-                <li><strong>Meliodas vs Percival:</strong> Ambos son líderes carismáticos y poderosos. Meliodas es conocido por su fuerza bruta y habilidades demoníacas, mientras que Percival destaca por su habilidad con la magia y su valentía.</li>
-                <li><strong>Elizabeth vs Lancelot:</strong> Elizabeth es la princesa valiente que busca la paz y la justicia, mientras que Lancelot es un caballero guerrero conocido por su habilidad en el combate y su lealtad.</li>
-                <li><strong>Ban vs Gawain:</strong> Ban es el inmortal con un pasado trágico y un gran corazón, en contraste, Gawain es un caballero cuyo poder y hambre insaciable lo hacen temido y respetado.</li>
+                <li>Episodio 1: El comienzo de la aventura</li>
+                <li>Episodio 2: Enfrentando al enemigo</li>
+                <li>Episodio 3: El poder de la amistad</li>
+            </ul>
+            <h3>Mokushiroku no Yonkishi</h3>
+            <ul>
+                <li>Episodio 1: El nacimiento de los cuatro caballeros</li>
+                <li>Episodio 2: El primer combate</li>
+                <li>Episodio 3: La llegada de un nuevo enemigo</li>
             </ul>
         </section>
 
-        <section id="articulos" class="mt-5">
-            <h2 class="text-center">Artículos</h2>
-            <article class="mb-4">
+        <section id="personajes">
+            <h2>Personajes</h2>
+            <h3>Nanatsu no Taizai</h3>
+            <ul>
+                <li>Meliodas: El líder de los Siete Pecados</li>
+                <li>Elizabeth: La princesa valiente</li>
+                <li>Ban: El inmortal</li>
+            </ul>
+            <h3>Mokushiroku no Yonkishi</h3>
+            <ul>
+                <li>Percival: El caballero de la Muerte</li>
+                <li>Lancelot: El caballero de la Guerra</li>
+                <li>Gawain: El caballero de la Hambruna</li>
+            </ul>
+        </section>
+
+        <section id="articulos">
+            <h2>Artículos</h2>
+            <article>
                 <h3>Reseña del primer episodio de Nanatsu no Taizai</h3>
-                <p>El primer episodio de "Nanatsu no Taizai" nos introduce a un mundo lleno de magia y aventuras. La historia comienza con la princesa Elizabeth, quien huye del reino de Liones en busca de ayuda.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Elizabeth se encuentra con Meliodas, el líder de los Siete Pecados y propietario del bar Boar Hat. Juntos, emprenden un viaje para reunir a los demás Pecados y enfrentarse a los enemigos que amenazan el reino.</p>
-                </div>
-                <button class="btn btn-outline-primary leer-mas-btn">Leer más</button>
+                <p>El primer episodio de "Nanatsu no Taizai" nos introduce a un mundo lleno de magia y aventuras. La historia comienza con la princesa Elizabeth, quien huye del reino de Liones en busca de los legendarios Siete Pecados Capitales, un grupo de caballeros que una vez fueron los protectores del reino.</p>
+                <a href="#">Leer más</a>
             </article>
-            <article class="mb-4">
+            <article>
                 <h3>Reseña del primer episodio de Mokushiroku no Yonkishi</h3>
-                <p>El primer episodio de "Mokushiroku no Yonkishi" nos presenta a los nuevos héroes de la saga. La historia sigue a Percival, un joven caballero destinado a convertirse en uno de los Cuatro Caballeros del Apocalipsis.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Percival vive en una pequeña isla junto a su abuelo, pero su vida cambia drásticamente cuando un misterioso caballero llega a la isla con noticias de un destino profetizado.</p>
-                </div>
-                <button class="btn btn-outline-primary leer-mas-btn">Leer más</button>
+                <p>El primer episodio de "Mokushiroku no Yonkishi" nos presenta a los nuevos héroes de la saga. La historia sigue a Percival, un joven caballero destinado a convertirse en uno de los Cuatro Caballeros del Apocalipsis, quienes están destinados a salvar el mundo de una nueva amenaza.</p>
+                <a href="#">Leer más</a>
             </article>
-            <article class="mb-4">
+            <article>
                 <h3>Teorías sobre el próximo arco de Nanatsu no Taizai</h3>
-                <p>Con la llegada del nuevo arco, los fans especulan sobre los próximos acontecimientos en "Nanatsu no Taizai". Una de las teorías más populares es que veremos más sobre la historia de los Siete Pecados.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Otra teoría sugiere que veremos el regreso de antiguos enemigos que se unirán a las fuerzas oscuras para luchar contra los Siete Pecados. Los fans también esperan ver desarrollos importantes en los personajes principales.</p>
-                </div>
-                <button class="btn btn-outline-primary leer-mas-btn">Leer más</button>
+                <p>Con la llegada del nuevo arco, los fans especulan sobre los próximos acontecimientos en "Nanatsu no Taizai". Una de las teorías más populares es que veremos más sobre la historia de origen de los personajes principales y cómo se relacionan con la nueva amenaza que enfrenta el reino.</p>
+                <a href="#">Leer más</a>
             </article>
-            <article class="mb-4">
+            <article>
                 <h3>Teorías sobre el próximo arco de Mokushiroku no Yonkishi</h3>
-                <p>Los fans de "Mokushiroku no Yonkishi" esperan con ansias el próximo arco, donde se revelarán más secretos de los Cuatro Caballeros del Apocalipsis. Una teoría popular es que se enfrentarán a nuevos desafíos.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Se especula que los nuevos caballeros se enfrentarán a pruebas que desafiarán sus creencias y habilidades, forjando alianzas inesperadas y revelando traiciones ocultas.</p>
-                </div>
-                <button class="btn btn-outline-primary leer-mas-btn">Leer más</button>
-            </article>
-            <article class="mb-4">
-                <h3>Los poderes ocultos de Meliodas</h3>
-                <p>Meliodas, el líder de los Siete Pecados, es conocido por su inmenso poder. En este artículo, exploramos los poderes ocultos que aún no han sido revelados completamente en la serie.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Desde su habilidad con la Full Counter hasta sus transformaciones demoníacas, Meliodas continúa sorprendiendo a los fans con nuevas habilidades y secretos por descubrir.</p>
-                </div>
-                <button class="btn btn-outline-primary leer-mas-btn">Leer más</button>
-            </article>
-            <article class="mb-4">
-                <h3>El origen de los Cuatro Caballeros del Apocalipsis</h3>
-                <p>El nuevo arco de "Mokushiroku no Yonkishi" presenta a los Cuatro Caballeros del Apocalipsis. En este artículo, investigamos el origen y la historia detrás de estos personajes tan poderosos.</p>
-                <div class="contenido-adicional" style="display: none;">
-                    <p>Desde sus conexiones con los Siete Pecados hasta sus propios poderes únicos, los Cuatro Caballeros del Apocalipsis prometen traer nuevas y emocionantes aventuras a la saga.</p>
-                </div>
-                <button class="btn btn-outline-primary leer-mas-btn">Leer más</button>
+                <p>Los fans de "Mokushiroku no Yonkishi" esperan con ansias el próximo arco, donde se revelarán más secretos de los Cuatro Caballeros del Apocalipsis. Una teoría popular es que se explorará la conexión entre los nuevos caballeros y los Siete Pecados Capitales, creando una trama entrelazada que enriquecerá ambos mundos.</p>
+                <a href="#">Leer más</a>
             </article>
         </section>
 
-        <section id="contacto" class="mt-5">
-            <h2 class="text-center">Contacto</h2>
-            <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Enviar</button>
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <p>Mantente al día con las últimas noticias sobre "Nanatsu no Taizai" y "Mokushiroku no Yonkishi". Aquí encontrarás actualizaciones sobre nuevas temporadas, eventos y lanzamientos de manga. No te pierdas ninguna novedad y sigue de cerca la evolución de tus series favoritas.</p>
+        </section>
+
+        <section id="encuestas">
+            <h2>Encuestas y cuestionarios</h2>
+            <p>Involucra a tus lectores con encuestas y cuestionarios relacionados con la serie. Por ejemplo, "¿Cuál es tu personaje favorito?" o "¿Qué episodio te impactó más?". Participa y descubre qué piensan otros fans de la serie.</p>
+        </section>
+
+        <section id="teorias">
+            <h2>Teorías de los Fans</h2>
+            <p>Crea un espacio donde los fans puedan compartir y discutir sus propias teorías sobre lo que podría suceder en la serie. ¡Comparte tus ideas y únete a la conversación con otros entusiastas de "Nanatsu no Taizai" y "Mokushiroku no Yonkishi"!</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </section>
 
-        <section id="comentarios" class="mt-5">
-            <h2 class="text-center">Comentarios</h2>
-            <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
-                <div class="form-group">
-                    <label for="nombre-comentario">Nombre:</label>
-                    <input type="text" id="nombre-comentario" name="nombre-comentario" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="comentario">Comentario:</label>
-                    <textarea id="comentario" name="comentario" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Enviar Comentario</button>
+        <section id="comentarios">
+            <h2>Comentarios</h2>
+            <form>
+                <label for="comentario-nombre">Nombre:</label>
+                <input type="text" id="comentario-nombre" name="comentario-nombre" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+                <button type="submit">Enviar</button>
             </form>
-            <div id="lista-comentarios" class="mt-4">
-                <!-- Aquí se mostrarán los comentarios -->
-            </div>
         </section>
     </main>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js" async></script>
+
+    <footer>
+        <p>&copy; 2025 Blog de Nanatsu no Taizai. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
 </body>
 </html>
